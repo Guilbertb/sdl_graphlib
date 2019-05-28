@@ -35,10 +35,10 @@ void setPixelVerif(int x, int y, Uint32 coul);
 /* trace un rectangle plein du point (x,y) au point (w,h) avec la couleur coul */
 void barre(int x, int y, int w, int h, Uint32 coul);
 
-/* trace une ligne horizontale du point (x,y) au point (w,y) avec la couleur coul */
+/* trace une ligne horizontale du point (x,y) au point (x+w,y) avec la couleur coul */
 void ligneHorizontale(int x, int y, int w, Uint32 coul);
 
-/* trace une ligne verticale  du point (x,y) au point (x,h) avec la couleur coul */
+/* trace une ligne verticale  du point (x,y) au point (x,y+h) avec la couleur coul */
 void ligneVerticale(int x, int y, int h, Uint32 coul);
 
 /* trace un rectangle du point (x,y) au point (w,h) avec la couleur coul */
