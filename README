@@ -3,3 +3,9 @@ sudo apt-get install libsdl-ttf2.0-dev
 
 
 pour installer sdl
+
+A propos du Makefile
+
+Ici le projet s'appel test , mais si vous modifiez votre nom de projet 
+n'oubliez pas de modifier ce nom aussi dans le Makefile
+
