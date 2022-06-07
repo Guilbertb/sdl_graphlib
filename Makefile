@@ -1,14 +1,14 @@
 CC=gcc
 CFLAGS=-W -Wall -ansi -pedantic
 LDFLAGS=`sdl-config --cflags --libs` -lm 
-EXEC=test
-SRC=  graphlib.c test.c
+EXEC=axes
+SRC=  graphlib.c $(EXEC).c
 OBJ= $(SRC:.c=.o)
 
-all:	$(EXEC)
+all:$(EXEC)
 
-test:	$(OBJ)
-	$(CC) -o $@ $^ $(LDFLAGS)
+$(EXEC):$(OBJ)
+	$(CC) -o $@ $^ $(LDFLAGS) $(LDFLAGS)
 
 
 %.o: %.c
