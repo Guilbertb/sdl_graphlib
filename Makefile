@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-W -Wall -ansi -pedantic
 LDFLAGS=`sdl-config --cflags --libs` -lm 
-EXEC=axes
+EXEC=test
 SRC=  graphlib.c $(EXEC).c
 OBJ= $(SRC:.c=.o)
 
