@@ -21,4 +21,7 @@ clean:
 
 mrproper: clean
 	rm -rf $(EXEC)
-			
+	
+
+edit: $(EXEC).c
+	nano $(EXEC).c
